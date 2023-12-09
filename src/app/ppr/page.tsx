@@ -8,10 +8,8 @@ export default function Page() {
 		timeZone: "America/New_York",
 	});
 
-	Promise.allSettled;
-
 	return (
-		<div className="p-8 space-y-8">
+		<div className="space-y-8 p-4 bg-white border-zinc-50">
 			<div>
 				<h1>Page.tsx (should be static)</h1>
 				<p>Time: {time}</p>

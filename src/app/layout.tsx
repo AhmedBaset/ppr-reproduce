@@ -11,9 +11,18 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
+	const time = new Date().toLocaleTimeString("en-US", {
+		timeZone: "America/New_York",
+	});
+
 	return (
 		<html lang="en">
-			<body>
+			<body className="p-8 space-y-8 bg-zinc-100">
+				<div>
+					<h1>Root Layout</h1>
+					<p>Time: {time}</p>
+					<p>Random: {(Math.random() * 10).toFixed(1)}</p>
+				</div>
 				<div className="container">{children}</div>
 			</body>
 		</html>
