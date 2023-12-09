@@ -3,7 +3,7 @@ export async function AsyncNotFulfilled() {
 		timeZone: "America/New_York",
 	});
 
-	await new Promise((resolve) => setTimeout(resolve, 30_000));
+	await new Promise((resolve) => setTimeout(resolve, 10_000));
 
 	return (
 		<div className="bg-zinc-100 border border-zinc-300 transition hover:border-zinc-500 p-6">

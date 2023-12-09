@@ -1,9 +1,9 @@
-import { headers } from "next/headers"
+// import { headers } from "next/headers"
+import { unstable_noStore } from "next/cache";
 
-export function AsyncComponent() {
-	// unstable_noStore();
-
-	headers()
+export async function AsyncComponent() {
+	unstable_noStore();
+	// headers()
 
 	const time = new Date().toLocaleTimeString("en-US", {
 		timeZone: "America/New_York",
